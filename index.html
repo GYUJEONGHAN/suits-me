@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>개발자 적성 검사</title>
+    <title>코딩 적성 검사</title>
     <meta name="description" content="개발자 적성 검사">
     <meta name="author" content="GYUJEONG HAN">
     <!-- <link rel="icon" type="image/png" href="imgs/icon/motoicon.png"> 아이콘 -->
@@ -14,26 +14,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Home -->
     <section id="home">
         <div class="home_container">
-            <h1 class="title">개발자 적성검사 ver.1.0</h1>
-            <img class="home_image" src="imgs/pngwing.png" alt="">
+            <h1 class="title">코딩 적성검사</h1>
+            <h3 class="ver">나는 코딩에 적성이 맞을까? 간단한 무료 테스트!</h4>
+            <div class="icons_container">
+                <img class="icon" src="imgs/stacks_icon/and.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/c.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/html.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/dart.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/angular.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/flutter.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/css.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/java.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/js.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/kotlin.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/node.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/cpp.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/python.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/react.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/cshop.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/swift.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/vue.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/and.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/c.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/html.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/dart.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/angular.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/flutter.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/css.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/java.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/js.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/kotlin.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/node.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/cpp.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/python.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/react.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/cshop.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/swift.png" alt="">
+                <img class="icon" src="imgs/stacks_icon/vue.png" alt="">
+            </div>
+            <div class="animation_button_group">
+                <span class="ani_comment">애니메이션 끄기</span>
+                <button class="stop" href="javascript:void(0);" onclick="toggleAnimate()"><i class="fa-sharp fa-solid fa-circle-stop"></i></button>
+            </div>
         </div>
     </section>
 
     <!-- bottom -->
     <section id="bottom">
         <button class="start_button">
-            <span class="big_text">시작하기</span><br>
-            <span class="small_text">무료 테스트</span>
+            <a href="test/1.html">
+                <span class="big_text">시작하기</span><br><span class="small_text">무료 테스트</span>
+            </a>
         </button>
         <h5 class="madeby">MADE BY GYUJEONG HAN</h5>
         <div class="contact">
-            <button class="contact_btn"><a href="mailto:example@example.com">문의하기</a></button>
+            <button class="contact_btn" ><a href="mailto:example@example.com">문의하기</a></button>
         </div>
     </section>
 </body>

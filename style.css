@@ -90,6 +90,7 @@ p {
 body {
     background: linear-gradient(to bottom, #feb546, #ffffff);
     min-height: 100vh;
+    user-select: none;
 }
 
 
@@ -100,13 +101,18 @@ body {
     margin-top: 50px;
     font-size: 40px;
     color: black;
+    margin-bottom: 50px;
 }
+
+.ver {
+    color: var(--color-dark-grey);
+    font-size: 18px;
+}
+
+
 
 .description {
     font-size: var(--font-small);
-}
-
-.contact {
 }
 
 .contact_btn {
@@ -128,9 +134,65 @@ body {
     text-align: center;
 }
 
-.home_image{
-    width: 450px;
-    margin: 50px 0;
+.icons_container {
+    position: relative;
+    height: 350px;
+    width: 90%;
+    max-width: 1400px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.icon {
+    position: absolute;
+    width: 75px;
+    margin: 160px 0;
+    padding: 12px;
+    overflow: hidden;
+    filter: drop-shadow(0 13px 10px rgba(0, 0, 0, 0.4));
+}
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 35px;
+    }
+    .icons_container {
+        width: 100%;
+    }
+    .stop {
+        margin-right: 10px !important;
+    }
+
+    .start_button {
+        font-size: 27px !important;
+        padding: 8px 35px !important;
+        margin-top: 50px;
+    }
+
+    .small_text {
+        font-size: 14px !important;
+    }
+
+    .ver {
+        font-size: 16px;
+    }
+
+}
+
+.animation_button_group{
+    display:flex;
+    justify-content: flex-end;
+}
+
+.ani_comment {
+    font-size: 11px;
+    margin: 2px 0;
+    color: var(--color-grey);
+}
+.stop {
+    font-size: 18px;
+    color: red;
+    margin-right: 30px;
 }
 
 
@@ -143,17 +205,17 @@ body {
 
 .start_button {
     display: inline-block;
-    color: white;
     background-color: rgb(255, 155, 79);
-    font-size: 27px;
+    font-size: 35px;
     border-radius: 15px;
-    padding: 8px 35px;
+    padding: 10px 42px;
     margin-top: 50px;
     font-weight: var(--weight-bold);
 }
 
+
 .small_text {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: var(--weight-regular);
 }
 
@@ -169,7 +231,7 @@ body {
 
 .madeby {
     color: var(--color-grey);
-    margin-top: 100px;
+    margin-top: 70px;
     position: relative;
     bottom: 10px;
     text-align: center;

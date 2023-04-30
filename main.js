@@ -22,21 +22,6 @@ function startAction() { //이미지를 롤링
 			$(this).css("left", $(this).position().left-1);
 		});
 
-        var windowWidth = $(window).width();
-        var fortyPercent = windowWidth * 0.4;
-        var sixtyPercent = windowWidth * 0.6;
-
-        var iconLeft = $(".icon").position().left;
-        var iconWidth = $(".icon").width();
-        var iconRight = iconLeft + iconWidth;
-        if (iconLeft > fortyPercent && iconRight < sixtyPercent) {
-            // 아이콘이 40%~60% 범위 내에 있음
-            console.log('아이콘이 40 60 내에 있다.');
-        } else {
-            // 아이콘이 40%~60% 범위 내에 없음
-            console.log('아이콘이 40 60 내에 없다.');
-        }
-
 
         
 		// 조건문을 사용하여 롤링되는 이미지가 끝에 도달하면 다시 처음으로 돌아가도록 설정

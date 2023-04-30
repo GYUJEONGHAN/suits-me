@@ -115,21 +115,6 @@ body {
     font-size: var(--font-small);
 }
 
-.contact_btn {
-    font-size: 14px;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 4px 12px;
-}
-
-.contact_btn:hover {
-    background-color: rgb(231, 100, 0);
-}
-
-.contact_btn:hover a{
-    color: white;
-}
-
 #home {
     text-align: center;
 }
@@ -150,40 +135,6 @@ body {
     padding: 12px;
     overflow: hidden;
     filter: drop-shadow(0 13px 10px rgba(0, 0, 0, 0.4));
-}
-
-@media screen and (max-width: 768px) {
-    .title{
-        font-size: 35px;
-    }
-    .icons_container {
-        width: 100%;
-    }
-
-    .icon {
-        filter: none;
-        margin: 140px 0;
-    }
-
-    .stop {
-        margin-right: 10px !important;
-        padding-left: 0px;
-    }
-
-    .start_button {
-        font-size: 27px !important;
-        padding: 8px 35px !important;
-        margin-top: 50px;
-    }
-
-    .small_text {
-        font-size: 14px !important;
-    }
-
-    .ver {
-        font-size: 16px;
-    }
-
 }
 
 .animation_button_group{
@@ -238,10 +189,103 @@ body {
 
 .madeby {
     color: var(--color-grey);
-    margin-top: 70px;
     position: relative;
     bottom: 10px;
     text-align: center;
     left: 50%;
+    font-size: 10px;
     transform: translateX(-50%);
+}
+
+
+.contact_btn {
+    font-size: 14px;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 4px 12px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.contact_btn:hover {
+    background-color: rgb(231, 100, 0);
+}
+
+.contact_btn:hover a{
+    color: white;
+}
+
+
+/* 1.html */
+
+#quiz1 {
+    padding-top: 30px; 
+}
+
+.quiz_container{
+    padding-inline: 45px;
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+}
+
+.problem {
+    font-weight: 200;
+}
+
+.problem_container {
+    text-align: center;
+    padding: 10px;
+}
+
+.answers_list {
+    text-align: center;
+}
+
+.answers {
+    padding: 15px;
+    border-top: 1px solid rgb(227, 227, 227);
+}
+
+.answer {
+    color: var(--color-dark-grey);
+}
+
+
+/* 모바일 화면 */
+
+@media screen and (max-width: 768px) {
+    .title{
+        font-size: 35px;
+    }
+    .icons_container {
+        width: 100%;
+    }
+
+    .icon {
+        filter: none;
+        margin: 140px 0;
+    }
+
+    .stop {
+        margin-right: 10px !important;
+        padding-left: 0px;
+    }
+
+    .start_button {
+        font-size: 27px !important;
+        padding: 8px 35px !important;
+        margin-top: 50px;
+    }
+
+    .small_text {
+        font-size: 14px !important;
+    }
+
+    .ver {
+        font-size: 16px;
+    }
+
 }

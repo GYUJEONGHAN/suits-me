@@ -159,8 +159,15 @@ body {
     .icons_container {
         width: 100%;
     }
+
+    .icon {
+        filter: none;
+        margin: 140px 0;
+    }
+
     .stop {
         margin-right: 10px !important;
+        padding-left: 0px;
     }
 
     .start_button {
